@@ -2093,6 +2093,18 @@ public final class LineageSettings {
                 sAlwaysTrueValidator;
 
         /**
+         * Statusbar clock background
+         * 0 - hide accented chip  (default)
+         * 1 - show accented chip
+         * @hide
+         */
+        public static final String STATUSBAR_CLOCK_CHIP = "statusbar_clock_chip";
+
+        /** @hide */
+        public static final Validator STATUSBAR_CLOCK_CHIP_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Mapping of validators for all system settings.  This map is used to validate both valid
          * keys as well as validating the values for those keys.
          *
@@ -2255,6 +2267,7 @@ public final class LineageSettings {
                     ENABLE_TASKBAR_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
+            VALIDATORS.put(STATUSBAR_CLOCK_CHIP, STATUSBAR_CLOCK_CHIP_VALIDATOR);
         };
         // endregion
     }
