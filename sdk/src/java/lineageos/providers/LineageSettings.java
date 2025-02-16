@@ -2105,6 +2105,15 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Statusbar logo
+         * @hide
+         */
+        public static final String STATUS_BAR_LOGO = "status_bar_logo";
+
+        /** @hide **/
+        public static final Validator STATUS_BAR_LOGO_VALIDATOR = sBooleanValidator;
+
+        /**
          * Mapping of validators for all system settings.  This map is used to validate both valid
          * keys as well as validating the values for those keys.
          *
@@ -2268,6 +2277,7 @@ public final class LineageSettings {
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
             VALIDATORS.put(STATUSBAR_CLOCK_CHIP, STATUSBAR_CLOCK_CHIP_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_LOGO, STATUS_BAR_LOGO_VALIDATOR);
         };
         // endregion
     }
